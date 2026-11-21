@@ -826,7 +826,7 @@ const phStyle=l=>{const p=(PHOTOS[l.id]||[])[0];return p?`style="background-imag
 function locCard(l){return `<div class="loc-card" data-go="loc-${l.id}">
   <div class="ph ${l.cls}" ${phStyle(l)}><span class="mark">${l.mark}</span><span class="tag">${l.area}</span></div>
   <div class="loc-body"><div class="kr">${l.kr}</div><h4>${l.name}</h4><div class="addr">${l.addr}</div>
-  <div class="chips"><span class="chip">${l.rooms.length}개 공간</span><span class="chip">사진 ${(PHOTOS[l.id]||[]).length}장</span><span class="chip">최대 ${l.max}명</span><span class="chip">${won(minRate(l))}~/시간</span></div></div></div>`}
+  <div class="chips"><span class="chip">${l.rooms.length}개 공간</span><span class="chip">최대 ${l.max}명</span><span class="chip">${won(minRate(l))}~/시간</span></div></div></div>`}
 function svcCard(s){return `<div class="svc"><div class="ico">${svgIcon(s.ic)}</div><div class="en">${s.en}</div><h4>${s.kr}</h4><p>${s.d}</p><ul>${s.li.map(x=>`<li>${x}</li>`).join('')}</ul></div>`}
 function priceTable(l){return `<div class="tbl-wrap"><table><thead><tr><th>공간</th><th class="num">면적</th><th class="num">수용</th><th class="num">1인당</th><th class="num">시간당</th><th>용도 · 비고</th></tr></thead><tbody>${l.rooms.map(r=>`<tr><td class="rn">${r[0]}</td><td class="num" data-l="면적">${r[1]?r[1]+'평':'-'}</td><td class="num" data-l="수용">${r[2]}인</td><td class="num" data-l="1인당">${r[3]?won(r[3]):'-'}</td><td class="num pr" data-l="시간당"><b>${won(r[4])}</b></td><td class="nt"><small>${r[5]}</small></td></tr>`).join('')}</tbody></table></div>`}
 
