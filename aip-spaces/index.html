@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIP Spaces | 프리미엄 비즈니스 공간 대관</title>
+<meta name="description" content="에이아이피프라퍼티(AIP Property)가 그레이프와 함께 안내하는 서울 도심 프리미엄 회의실 · 컨퍼런스 · 라운지 대관">
+<meta property="og:title" content="AIP Spaces | 프리미엄 비즈니스 공간 대관">
+<meta property="og:description" content="센트로폴리스 · 여의도 SWITCH 22 · LOUNGE 107 · 시그니처타워 대관 상담과 예약">
+<link rel="icon" href="images/logo-navy.svg" type="image/svg+xml">
+<meta property="og:image" content="https://www.aipspaces.kr/images/og.jpg">
+<meta property="og:url" content="https://www.aipspaces.kr/">
+<link rel="canonical" href="https://www.aipspaces.kr/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Serif+KR:wght@400;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1a2b; --ink-2:#1b2a40; --navy:#22344f;
+  --gold:#b8955a; --gold-2:#d9c29a; --cream:#f7f3ec; --paper:#fbfaf7;
+  --line:#e4ddd0; --muted:#6b7280; --text:#1f2733;
+  --radius:14px; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.serif{font-family:'Noto Serif KR',serif}
+.en{font-family:'Cormorant Garamond',serif;letter-spacing:.08em}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(15,26,43,.96);backdrop-filter:blur(8px);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:baseline;gap:10px;cursor:pointer}
+.logo b{font-family:'Cormorant Garamond',serif;font-size:28px;letter-spacing:.18em;color:var(--gold-2)}
+.logo span{font-size:12px;letter-spacing:.3em;color:#cfd6e0}
+.menu{display:flex;gap:6px;list-style:none}
+.menu>li{position:relative}
+.menu>li>a{display:block;padding:24px 16px;font-size:14px;letter-spacing:.08em;color:#e6e9ee;cursor:pointer;transition:color .2s}
+.menu>li>a:hover,.menu>li>a.active{color:var(--gold-2)}
+.sub{position:absolute;top:100%;left:0;min-width:210px;background:#fff;color:var(--text);border-radius:0 0 10px 10px;box-shadow:0 18px 40px rgba(0,0,0,.18);padding:8px 0;opacity:0;visibility:hidden;transform:translateY(-6px);transition:.2s;list-style:none}
+.menu>li:hover .sub{opacity:1;visibility:visible;transform:none}
+.sub a{display:block;padding:10px 20px;font-size:14px;cursor:pointer}
+.sub a:hover{background:var(--cream);color:var(--navy)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:999px;border:1px solid transparent;font-size:14px;font-weight:500;cursor:pointer;transition:.2s}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:#a5824a}
+.btn-line{border-color:currentColor;background:transparent}
+.btn-line:hover{background:rgba(255,255,255,.08)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--navy)}
+.hamb{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer}
+.mnav{display:none}
+
+/* Views */
+.view{display:none;animation:fade .35s ease}
+.view.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* Hero */
+.hero{position:relative;color:#fff;min-height:560px;display:flex;align-items:center;overflow:hidden;background:
+  radial-gradient(1200px 500px at 85% 20%,rgba(184,149,90,.28),transparent 60%),
+  radial-gradient(800px 600px at 10% 90%,rgba(60,90,130,.45),transparent 60%),
+  linear-gradient(135deg,#0b1422,#1b2a40 60%,#22344f)}
+.hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 120px)}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{font-size:12px;letter-spacing:.35em;color:var(--gold-2);text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-family:'Noto Serif KR',serif;font-weight:600;font-size:clamp(34px,5vw,58px);line-height:1.3;margin-bottom:22px}
+.hero p{max-width:620px;color:#cfd6e0;font-size:17px;margin-bottom:36px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:48px;margin-top:64px;flex-wrap:wrap}
+.stats div b{display:block;font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold-2);line-height:1}
+.stats div span{font-size:13px;color:#aeb8c6}
+
+/* Page head */
+.phead{background:linear-gradient(135deg,#0f1a2b,#22344f);color:#fff;padding:72px 0 56px}
+.crumb{font-size:12px;color:#9fabbb;letter-spacing:.05em;margin-bottom:14px}
+.crumb a{cursor:pointer}.crumb a:hover{color:var(--gold-2)}
+.phead h2{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,54px);letter-spacing:.08em;font-weight:500;line-height:1.1}
+.phead p{color:#cfd6e0;margin-top:12px;max-width:640px}
+
+section{padding:88px 0}
+.sec-title{text-align:center;margin-bottom:52px}
+.sec-title .en{color:var(--gold);font-size:15px;letter-spacing:.35em;text-transform:uppercase}
+.sec-title h3{font-family:'Noto Serif KR',serif;font-size:clamp(26px,3.2vw,36px);font-weight:600;margin-top:8px;color:var(--ink)}
+.sec-title p{color:var(--muted);margin-top:12px}
+.bg-cream{background:var(--cream)}
+
+/* Location cards */
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.loc-card{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);cursor:pointer;transition:.25s}
+.loc-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(15,26,43,.12)}
+.ph{position:relative;aspect-ratio:16/10;display:flex;align-items:flex-end;padding:20px;color:#fff;overflow:hidden}
+.ph::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 60%)}
+.ph .tag{position:relative;font-size:12px;letter-spacing:.2em;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:4px 10px;border-radius:999px}
+.ph .mark{position:absolute;right:18px;top:12px;font-family:'Cormorant Garamond',serif;font-size:64px;opacity:.18;letter-spacing:.05em}
+.p1{background:linear-gradient(135deg,#1d3557,#457b9d 60%,#a8c5da)}
+.p2{background:linear-gradient(135deg,#3d2c1e,#8a6a46 55%,#d9c29a)}
+.p3{background:linear-gradient(135deg,#1f3a35,#4d7c6f 55%,#b8d3c5)}
+.p4{background:linear-gradient(135deg,#2b2440,#5f4b8b 55%,#c7bce0)}
+.loc-body{padding:22px 22px 26px}
+.loc-body h4{font-size:19px;color:var(--ink);font-weight:700}
+.loc-body .kr{color:var(--gold);font-size:13px;font-weight:500}
+.loc-body .addr{color:var(--muted);font-size:14px;margin-top:10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font-size:12px;padding:3px 10px;border-radius:999px;background:var(--cream);color:var(--navy)}
+
+/* Services */
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;transition:.25s}
+.svc:hover{border-color:var(--gold-2);box-shadow:0 14px 30px rgba(15,26,43,.07)}
+.svc .ico{width:52px;height:52px;border-radius:12px;background:var(--ink);color:var(--gold-2);display:grid;place-items:center;margin-bottom:20px}
+.svc .en{color:var(--gold);font-size:14px;text-transform:uppercase}
+.svc h4{font-family:'Noto Serif KR',serif;font-size:21px;color:var(--ink);margin:4px 0 10px}
+.svc p{color:var(--muted);font-size:15px}
+.svc ul{margin-top:14px;list-style:none}
+.svc li{font-size:14px;padding:4px 0 4px 16px;position:relative}
+.svc li::before{content:"";position:absolute;left:0;top:13px;width:6px;height:1px;background:var(--gold)}
+
+/* Detail */
+.detail-top{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.detail-top .ph{aspect-ratio:4/3;border-radius:var(--radius)}
+.info-list{list-style:none;margin-top:22px;border-top:1px solid var(--line)}
+.info-list li{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);font-size:15px}
+.info-list li b{min-width:92px;color:var(--navy);font-weight:500}
+.zones{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;font-size:15px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--ink);color:#fff;font-weight:500;font-size:14px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tbody tr:hover{background:#faf7f1}
+.tbl-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--line)}
+.note{font-size:13px;color:var(--muted);margin-top:12px}
+.box{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.box h5{font-size:17px;color:var(--ink);margin-bottom:12px}
+.box ul{list-style:none}
+.box li{font-size:14.5px;padding:5px 0 5px 18px;position:relative;color:#374151}
+.box li::before{content:"·";position:absolute;left:4px;color:var(--gold);font-weight:700}
+
+/* About */
+.about-hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-hero h3{font-family:'Noto Serif KR',serif;font-size:clamp(26px,3.4vw,38px);line-height:1.45;color:var(--ink)}
+.about-hero h3 em{font-style:normal;color:var(--gold)}
+.about-hero p{color:#4b5563;margin-top:18px}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pillar{border-radius:var(--radius);padding:30px;color:#fff;min-height:220px;display:flex;flex-direction:column;justify-content:flex-end}
+.pillar .en{font-size:13px;text-transform:uppercase;color:var(--gold-2)}
+.pillar h4{font-family:'Noto Serif KR',serif;font-size:22px;margin:4px 0 8px}
+.pillar p{font-size:14px;color:#d6dce5}
+.biz{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px 30px}
+.biz .no{font-family:'Cormorant Garamond',serif;font-size:46px;color:var(--gold-2);line-height:1}
+.biz h4{font-family:'Noto Serif KR',serif;font-size:21px;color:var(--ink);margin:10px 0 4px}
+.biz .en{font-size:13px;color:var(--gold);text-transform:uppercase}
+.biz p{color:#4b5563;font-size:15px;margin-top:12px}
+.value{text-align:center;padding:30px 18px}
+.value .circle{width:84px;height:84px;margin:0 auto 18px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--gold)}
+.value h5{font-size:17px;color:var(--ink);margin-bottom:6px}
+.value p{font-size:14px;color:var(--muted)}
+.leader{display:flex;gap:22px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.avatar{flex:none;width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--ink),var(--navy));color:var(--gold-2);display:grid;place-items:center;font-family:'Cormorant Garamond',serif;font-size:28px}
+.leader h5{font-size:18px;color:var(--ink)}
+.leader .role{font-size:13px;color:var(--gold);letter-spacing:.08em}
+.leader p{font-size:14px;color:var(--muted);margin-top:6px}
+.quote{background:var(--ink);color:#fff;text-align:center;padding:90px 24px}
+.quote p{font-family:'Noto Serif KR',serif;font-size:clamp(22px,3vw,32px);line-height:1.6;max-width:820px;margin:0 auto}
+.quote span{display:block;margin-top:20px;color:var(--gold-2);font-size:13px;letter-spacing:.3em}
+
+/* Reservation */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:40px;border-bottom:1px solid var(--line)}
+.tab{padding:14px 22px;font-size:15px;cursor:pointer;border:0;background:none;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
+.tab.on{color:var(--ink);border-bottom-color:var(--gold);font-weight:500}
+.pane{display:none}.pane.on{display:block}
+form .row{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+form .row.one{grid-template-columns:1fr}
+form .row.three{grid-template-columns:1fr 1fr 1fr}
+label{display:block;font-size:13.5px;color:var(--navy);margin-bottom:6px;font-weight:500}
+label i{color:#c0392b;font-style:normal}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #d8d2c6;border-radius:10px;background:#fff;color:var(--text);font-size:15px;transition:border .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,149,90,.15)}
+textarea{min-height:110px;resize:vertical}
+.form-layout{display:grid;grid-template-columns:1.5fr 1fr;gap:36px;align-items:start}
+.summary{position:sticky;top:96px;background:var(--ink);color:#fff;border-radius:var(--radius);padding:30px}
+.summary h5{font-size:16px;color:var(--gold-2);margin-bottom:14px;letter-spacing:.05em}
+.summary dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:14px}
+.summary dt{color:#9fabbb}.summary dd{text-align:right}
+.summary .total{border-top:1px solid rgba(255,255,255,.15);margin-top:18px;padding-top:18px;display:flex;justify-content:space-between;align-items:baseline}
+.summary .total b{font-size:26px;color:var(--gold-2);font-variant-numeric:tabular-nums}
+.summary small{display:block;color:#9fabbb;font-size:12px;margin-top:10px;line-height:1.6}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:#4b5563;margin:8px 0 22px}
+.agree input{width:auto;margin-top:5px}
+.policy{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.policy div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px}
+.policy b{display:block;color:var(--gold);font-size:13px;letter-spacing:.05em;margin-bottom:6px}
+.policy span{font-size:15px;color:var(--ink)}
+.price-sec{margin-bottom:48px}
+.price-sec h4{font-size:20px;color:var(--ink);margin-bottom:6px}
+.price-sec .meta{font-size:13px;color:var(--muted);margin-bottom:14px}
+
+/* Guide */
+.guide{display:flex;justify-content:space-between;align-items:center;gap:20px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px}
+.guide .left{display:flex;gap:18px;align-items:center}
+.guide .pdf{width:54px;height:64px;border-radius:6px;background:var(--cream);border:1px solid var(--line);display:grid;place-items:center;font-size:12px;color:var(--gold);font-weight:700}
+.guide h5{font-size:17px;color:var(--ink)}
+.guide p{font-size:13.5px;color:var(--muted)}
+
+/* CTA band */
+.band{background:linear-gradient(135deg,#1b2a40,#0f1a2b);color:#fff;padding:70px 0}
+.band .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.band h3{font-family:'Noto Serif KR',serif;font-size:clamp(22px,2.8vw,30px)}
+.band p{color:#aeb8c6;margin-top:6px}
+
+/* Footer */
+footer{background:#0b1320;color:#9aa5b4;font-size:13.5px;padding:56px 0 36px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot h6{color:#fff;font-size:14px;margin-bottom:14px;font-weight:500}
+.foot a{display:block;padding:3px 0;cursor:pointer}.foot a:hover{color:var(--gold-2)}
+.copy{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* Modal */
+.modal{position:fixed;inset:0;background:rgba(10,16,28,.6);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.modal.on{display:flex}
+.dialog{background:#fff;border-radius:16px;max-width:560px;width:100%;max-height:90vh;overflow:auto;padding:34px}
+.dialog h4{font-family:'Noto Serif KR',serif;font-size:22px;color:var(--ink);margin-bottom:8px}
+.dialog .lead{color:var(--muted);font-size:14px;margin-bottom:18px}
+.dialog pre{white-space:pre-wrap;background:var(--cream);border-radius:10px;padding:18px;font-family:inherit;font-size:14px;line-height:1.75;color:var(--text)}
+.dialog .acts{display:flex;gap:10px;justify-content:flex-end;margin-top:22px;flex-wrap:wrap}
+.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;padding:12px 22px;border-radius:999px;font-size:14px;opacity:0;transition:.3s;z-index:120;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+
+@media (max-width:960px){
+  .menu,.nav>.btn{display:none}.hamb{display:block}
+  .mnav.on{display:block;background:var(--ink);padding:8px 24px 20px}
+  .mnav a{display:block;color:#e6e9ee;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);cursor:pointer;font-size:15px}
+  .mnav a.s{padding-left:16px;color:#aeb8c6;font-size:14px}
+  .g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr 1fr}
+  .detail-top,.about-hero,.form-layout,.foot{grid-template-columns:1fr}
+  .summary{position:static}
+}
+@media (max-width:620px){
+  .g2,.g3,.g4,.pillars,.policy{grid-template-columns:1fr}
+  form .row,form .row.three{grid-template-columns:1fr}
+  section{padding:64px 0}.stats{gap:28px}
+  .guide{flex-direction:column;align-items:flex-start}
+}
+
+/* v2 additions */
+.logo img{height:34px;display:block}
+.logo .div{width:1px;height:22px;background:rgba(255,255,255,.25);margin:0 4px 0 6px;align-self:center}
+.logo span{align-self:center}
+.ph{background-size:cover!important;background-position:center!important}
+.partner{display:grid;grid-template-columns:1fr 1.2fr;gap:44px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:40px}
+.partner .badge{display:flex;align-items:center;gap:18px;font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--ink);letter-spacing:.1em}
+.partner .badge img{height:44px}
+.partner .badge i{font-style:normal;color:var(--gold);font-size:26px}
+.partner h4{font-family:'Noto Serif KR',serif;font-size:22px;color:var(--ink);margin:14px 0 8px}
+.partner p{color:#4b5563;font-size:15px}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:f}
+.flow div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 18px;position:relative}
+.flow div::before{counter-increment:f;content:"0" counter(f);font-family:'Cormorant Garamond',serif;font-size:28px;color:var(--gold-2);display:block;line-height:1;margin-bottom:10px}
+.flow b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:4px}
+.flow span{font-size:13.5px;color:var(--muted)}
+.flow .who{display:inline-block;margin-top:10px;font-size:11.5px;padding:2px 8px;border-radius:999px;background:var(--cream);color:var(--navy)}
+.cater{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.cater div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px}
+.cater b{font-size:17px;color:var(--ink)}
+.cater .pr{color:var(--gold);font-weight:500;margin:6px 0 10px}
+.cater p{font-size:13.5px;color:var(--muted)}
+.leader .contact{font-size:13px;color:var(--navy);margin-top:8px}
+.draft{outline:1px dashed var(--gold-2);outline-offset:4px;border-radius:4px}
+.muted{color:var(--muted)}
+td small{color:var(--muted);font-size:12.5px}
+.policy-doc h5{font-size:16px;color:var(--ink);margin:22px 0 8px}
+.policy-doc p,.policy-doc li{font-size:14.5px;color:#374151}
+.policy-doc ul{padding-left:20px}
+.sending{opacity:.6;pointer-events:none}
+@media (max-width:960px){.partner{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.cater{grid-template-columns:1fr}}
+:root{--g-p1:linear-gradient(135deg,#1d3557,#457b9d 60%,#a8c5da);--g-p2:linear-gradient(135deg,#3d2c1e,#8a6a46 55%,#d9c29a);--g-p3:linear-gradient(135deg,#1f3a35,#4d7c6f 55%,#b8d3c5);--g-p4:linear-gradient(135deg,#2b2440,#5f4b8b 55%,#c7bce0)}
+
+.gal{min-width:0}
+.gal-main{position:relative;overflow:hidden;border-radius:var(--radius);aspect-ratio:3/2;background:#0f1a2b}
+.gal-track{display:flex;height:100%;transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+.gal-slide{flex:0 0 100%;height:100%;margin:0;position:relative}
+.gal-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.gal-slide figcaption{position:absolute;left:0;right:0;bottom:0;padding:56px 24px 20px;background:linear-gradient(to top,rgba(10,16,28,.85),rgba(10,16,28,0));color:#fff;display:flex;flex-direction:column;gap:2px}
+.gal-slide figcaption b{font-size:19px;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.35)}
+.gal-slide figcaption span{font-size:12.5px;color:var(--gold-2);letter-spacing:.12em}
+.gal-btn{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.88);color:var(--ink);font-size:28px;line-height:1;cursor:pointer;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.2);transition:.2s}
+.gal-btn:hover{background:#fff}
+.gal-btn.prev{left:14px}.gal-btn.next{right:14px}
+.gal-count{position:absolute;top:14px;right:14px;background:rgba(10,16,28,.6);color:#fff;font-size:12.5px;padding:4px 12px;border-radius:999px;letter-spacing:.05em}
+.gal-thumbs{display:flex;gap:8px;overflow-x:auto;padding:10px 2px 4px;scrollbar-width:thin}
+.gal-thumbs button{flex:0 0 88px;height:60px;border:2px solid transparent;border-radius:8px;overflow:hidden;padding:0;cursor:pointer;opacity:.6;transition:.2s;background:none}
+.gal-thumbs button.on{border-color:var(--gold);opacity:1}
+.gal-thumbs button:hover{opacity:1}
+.gal-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.hero{background:linear-gradient(100deg,rgba(11,20,34,.94) 0%,rgba(11,20,34,.78) 45%,rgba(11,20,34,.35) 100%),url('images/switch22/14.jpg') center/cover!important}
+@media (max-width:620px){.gal-slide figcaption b{font-size:16px}.gal-btn{width:38px;height:38px;font-size:22px}}
+
+/* About pillars — 배경 사진: images/about/property.jpg · travel.jpg · space.jpg (없으면 색상 배경) */
+.pillar{background-size:cover!important;background-position:center!important;position:relative;overflow:hidden}
+.pillar>*{position:relative}
+.pl-property{background:linear-gradient(to top,rgba(10,16,28,.88) 0%,rgba(10,16,28,.35) 65%,rgba(10,16,28,.15)),url('images/about/property.jpg'),linear-gradient(160deg,#22344f,#0f1a2b)}
+.pl-travel{background:linear-gradient(to top,rgba(30,18,10,.88) 0%,rgba(30,18,10,.35) 65%,rgba(30,18,10,.12)),url('images/about/travel.jpg'),linear-gradient(160deg,#8a6a46,#3d2c1e)}
+.pl-space{grid-column:1/-1;min-height:260px!important;background:linear-gradient(90deg,rgba(10,16,28,.85) 0%,rgba(10,16,28,.45) 50%,rgba(10,16,28,.05) 100%),url('images/about/space.jpg') center 60%/cover,linear-gradient(160deg,#4d7c6f,#1f3a35)}
+.pillar{min-height:250px}
+
+/* v5: about pillar photos */
+.pl-property{background:linear-gradient(to top,rgba(10,16,28,.9) 0%,rgba(10,16,28,.4) 60%,rgba(10,16,28,.1)),url('images/about/property1.jpg') center 45%/cover,linear-gradient(160deg,#22344f,#0f1a2b)!important}
+.pl-fade{position:absolute!important;inset:0;background:linear-gradient(to top,rgba(10,16,28,.9) 0%,rgba(10,16,28,.4) 60%,rgba(10,16,28,.1)),url('images/about/property2.jpg') 80% 40%/cover;opacity:0;animation:plfade 12s ease-in-out infinite;z-index:0}
+.pillar>*:not(.pl-fade){z-index:1}
+@keyframes plfade{0%,38%{opacity:0}50%,88%{opacity:1}100%{opacity:0}}
+.pl-travel{background:linear-gradient(to top,rgba(20,10,6,.88) 0%,rgba(20,10,6,.35) 60%,rgba(20,10,6,.05)),url('images/about/travel.jpg') center 18%/cover,linear-gradient(160deg,#8a6a46,#3d2c1e)!important}
+@media (prefers-reduced-motion:reduce){.pl-fade{animation:none}}
+/* v5: Korean line-breaking & responsive polish */
+body{word-break:keep-all;overflow-wrap:break-word}
+h1,h2,h3,h4,h5,.sec-title p,.phead p{text-wrap:balance}
+p,li,dd,td{text-wrap:pretty}
+.hero h1 br,.about-hero h3 br{display:inline}
+.foot p{line-height:1.9}
+.foot p .nb{white-space:nowrap}
+@media (max-width:960px){
+  .wrap{padding:0 20px}
+  .about-hero{gap:36px}
+  .pillars{grid-template-columns:1fr 1fr}
+  .partner{padding:28px}
+  .info-list li{flex-direction:column;gap:4px}
+  .info-list li b{min-width:0}
+}
+@media (max-width:620px){
+  .hero{min-height:auto;padding:72px 0 64px}
+  .hero p{font-size:15.5px}
+  .phead{padding:52px 0 40px}
+  .pillars{grid-template-columns:1fr}
+  .pillar{min-height:220px}
+  .pl-space{min-height:220px!important}
+  .partner{padding:24px 20px}
+  .partner .badge{font-size:24px}.partner .badge img{height:34px}
+  .band .wrap{flex-direction:column;align-items:flex-start}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .tab{white-space:nowrap;padding:12px 16px}
+  .copy{flex-direction:column}
+  .summary dl{grid-template-columns:auto 1fr}
+  .flow{grid-template-columns:1fr}
+  .value{padding:18px 8px}
+}
+
+.pillar{min-height:300px}
+.pl-property,.pl-fade{--ov:linear-gradient(to top,rgba(10,16,28,.94) 0%,rgba(10,16,28,.6) 45%,rgba(10,16,28,.08) 80%)}
+.pl-property{background:var(--ov),url('images/about/property1.jpg') center 45%/cover,#0f1a2b!important}
+.pl-fade{background:var(--ov),url('images/about/property2.jpg') 80% 40%/cover}
+.pl-travel{background:linear-gradient(to top,rgba(20,10,6,.94) 0%,rgba(20,10,6,.6) 45%,rgba(20,10,6,.05) 80%),url('images/about/travel.jpg') center 15%/cover,#3d2c1e!important}
+@media (max-width:620px){.pillar{min-height:240px}}
+
+.loc-card .mark{display:none}
+@media (max-width:620px){
+  .eyebrow{font-size:10.5px;letter-spacing:.22em;line-height:1.8}
+  .stats{display:grid;grid-template-columns:repeat(3,auto);gap:18px;justify-content:start;margin-top:44px}
+  .stats div b{font-size:30px}.stats div span{font-size:11.5px}
+  .tbl-wrap{border:0;overflow:visible;background:none}
+  .tbl-wrap table{background:none}
+  .tbl-wrap thead{display:none}
+  .tbl-wrap tbody tr{display:grid;grid-template-columns:auto auto auto 1fr;gap:6px 14px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+  .tbl-wrap td{border:0;padding:0;text-align:left!important}
+  .tbl-wrap td.rn{font-weight:600;color:var(--ink);font-size:15.5px;grid-column:1/4;grid-row:1}
+  .tbl-wrap td.pr{grid-column:4;grid-row:1;text-align:right!important;color:var(--ink)}
+  .tbl-wrap td[data-l]:not(.pr){grid-row:2;white-space:nowrap;font-size:13px;color:var(--muted)}
+  .tbl-wrap td[data-l]:not(.pr)::before{content:attr(data-l) " ";color:var(--gold);font-size:12px}
+  .tbl-wrap tbody tr{grid-template-areas:none}
+  .tbl-wrap td.nt{grid-column:1/-1}
+  .tbl-wrap .meta-row{display:flex}
+}
+@media (max-width:620px){.hide-m{display:none}}
+.nb{white-space:nowrap}
+.quote .q-line{display:block;width:min(560px,70%);height:1px;background:rgba(255,255,255,.18);margin:44px auto 36px}
+.quote .q-en{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:16px;letter-spacing:.35em;text-transform:uppercase}
+.quote .q-h{font-family:'Noto Serif KR',serif;font-weight:400;font-size:clamp(19px,2.4vw,26px);margin:14px auto 10px;max-width:760px;line-height:1.5}
+.quote .q-ko{color:#c3cbd6;font-size:15px}
+@media (max-width:620px){.quote{padding:70px 22px}.quote .q-line{margin:34px auto 28px}.quote .q-ko{font-size:14px}}
+.hero h1{margin-bottom:12px}
+.hero-en{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.4vw,28px);color:var(--gold-2);letter-spacing:.04em;margin-bottom:26px}
+.m-br{display:none}
+.hero{padding:96px 0 80px}
+@media (max-width:620px){.m-br{display:inline}.hero{padding:64px 0 60px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo" data-go="home"><img src="images/logo-white.svg" alt="AIP 에이아이피프라퍼티"><i class="div"></i><span>SPACES</span></div>
+    <ul class="menu">
+      <li><a data-go="locations" data-top="locations">LOCATIONS</a><ul class="sub" id="subLoc"></ul></li>
+      <li><a data-go="service" data-top="service">OUR SERVICE</a></li>
+      <li><a data-go="about" data-top="about">ABOUT US</a></li>
+      <li><a data-go="booking" data-top="reservation">RESERVATION</a>
+        <ul class="sub">
+          <li><a data-go="booking">공간 예약</a></li>
+          <li><a data-go="confirm">예약확인/취소</a></li>
+          <li><a data-go="pricing">비용 안내</a></li>
+          <li><a data-go="tour">투어 신청</a></li>
+          <li><a data-go="filming">촬영대관 문의</a></li>
+        </ul></li>
+      <li><a data-go="guide" data-top="guide">공간안내서</a><ul class="sub" id="subGuide"></ul></li>
+    </ul>
+    <a class="btn btn-gold" data-go="booking">예약하기</a>
+    <button class="hamb" id="hamb" aria-label="메뉴">☰</button>
+  </div>
+  <nav class="mnav" id="mnav">
+    <a data-go="locations">LOCATIONS</a><a data-go="service">OUR SERVICE</a><a data-go="about">ABOUT US</a>
+    <a data-go="booking">RESERVATION</a>
+    <a class="s" data-go="booking">공간 예약</a><a class="s" data-go="confirm">예약확인/취소</a><a class="s" data-go="pricing">비용 안내</a><a class="s" data-go="tour">투어 신청</a><a class="s" data-go="filming">촬영대관 문의</a>
+    <a data-go="guide">공간안내서</a>
+  </nav>
+</header>
+
+<main>
+<!-- HOME -->
+<div class="view" id="v-home">
+  <div class="hero">
+    <div class="wrap">
+      <div class="eyebrow">AIP Property × Grape<span class="hide-m"> · Premium Space Rental</span></div>
+      <h1>공간을 넘어,<br>경험을 설계하다.</h1>
+      <div class="hero-en">Beyond Space,<br class="m-br"> Designed Experiences.</div>
+      <p>에이아이피프라퍼티가 그레이프(Grape)와 함께 서울 도심 프리미엄 회의실·컨퍼런스·라운지 대관을 안내합니다. 공간 선택부터 공연·강연·웰니스 콘텐츠, 행사 이후의 여정까지 AIP가 함께 설계합니다.</p>
+      <div class="cta"><a class="btn btn-gold" data-go="booking">대관 문의 · 예약 신청</a><a class="btn btn-line" data-go="locations">지점 둘러보기</a></div>
+      <div class="stats">
+        <div><b>04</b><span>도심 프리미엄 지점</span></div>
+        <div><b>30+</b><span>대관 가능 공간 타입</span></div>
+        <div><b>4–250</b><span>수용 인원 (명)</span></div>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="wrap">
+      <div class="sec-title"><div class="en">Locations</div><h3>목적에 맞는 공간을 선택하세요</h3><p>종각 · 여의도 · 을지로, 서울 핵심 업무지구의 4개 지점</p></div>
+      <div class="grid g4" id="homeLocs"></div>
+    </div>
+  </section>
+  <section class="bg-cream">
+    <div class="wrap">
+      <div class="sec-title"><div class="en">Our Service</div><h3>업무에서 커뮤니티까지</h3></div>
+      <div class="grid g3" id="homeSvc"></div>
+      <div style="text-align:center;margin-top:36px"><a class="btn btn-dark" data-go="service">서비스 전체 보기</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- LOCATIONS -->
+<div class="view" id="v-locations">
+  <div class="phead"><div class="wrap"><div class="crumb"><a data-go="home">Home</a> › Locations</div><h2>LOCATIONS</h2><p>그레이프가 운영하는 서울 도심 4개 지점의 프리미엄 비즈니스 공간</p></div></div>
+  <section><div class="wrap"><div class="grid g2" id="allLocs"></div></div></section>
+</div>
+
+<div class="view" id="v-detail"></div>
+
+<!-- SERVICE -->
+<div class="view" id="v-service">
+  <div class="phead"><div class="wrap"><div class="crumb"><a data-go="home">Home</a> › Our Service</div><h2>OUR SERVICE</h2><p>업무 · 학습 · 행사 · 커뮤니티를 위한 공간 서비스</p></div></div>
+  <section><div class="wrap"><div class="grid g3" id="allSvc"></div></div></section>
+  <section class="bg-cream">
+    <div class="wrap">
+      <div class="sec-title"><div class="en">Event Types</div><h3>이런 행사에 적합합니다</h3></div>
+      <div class="chips" style="justify-content:center;gap:10px">
+        <span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">사업설명회</span><span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">주주총회</span><span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">기자간담회</span><span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">세미나 · 강연</span><span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">VIP 접견 · 조찬</span><span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">기업 파티 · 이벤트</span><span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">면접 · 교육</span><span class="chip" style="padding:8px 16px;font-size:14px;background:#fff">촬영 (광고 · 드라마 · 유튜브)</span>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="sec-title"><div class="en">Catering</div><h3>케이터링</h3><p>행사일 기준 7일 전까지 사전 신청 · 협의 후 메뉴와 가격 확정</p></div>
+      <div class="cater">
+        <div><b>프리미엄 뷔페</b><div class="pr">1인 40,000원~ · 최소 100만원</div><p>최소 30명 · 테이블 데코, 핑거푸드와 식사, 비건 · 논알콜 칵테일 가능 · 출장비 별도</p></div>
+        <div><b>파티박스 뷔페</b><div class="pr">최소 25만원~</div><p>최소 20명 · 파티박스 형태의 핑거푸드와 식사, 비건 메뉴 가능 · 배송비 별도 가능</p></div>
+        <div><b>컨퍼런스 도시락</b><div class="pr">2~3만원대</div><p>최소 10인 · 메뉴 선택 가능, 배송비 별도 가능, 카페 음료 추가 구매 가능</p></div>
+      </div>
+      <p class="note" style="text-align:center">외부 음식 · 음료 반입은 불가하며, 외부 케이터링 반입 시 서비스 수수료가 발생합니다. 주류는 사전 협의 후 주문 가능합니다. 메뉴와 가격은 변동될 수 있습니다.</p>
+    </div>
+  </section>
+  <section class="bg-cream">
+    <div class="wrap">
+      <div class="sec-title"><div class="en">How to Book</div><h3>이용 방법</h3></div>
+      <div class="flow" id="flow"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ABOUT -->
+<div class="view" id="v-about">
+  <div class="phead"><div class="wrap"><div class="crumb"><a data-go="home">Home</a> › About Us</div><h2>ABOUT US</h2><p>머무는 공간과 경험을 함께 설계하는 종합 호스피탈리티 기업</p></div></div>
+  <section>
+    <div class="wrap about-hero">
+      <div>
+        <div class="eyebrow" style="color:var(--gold)">AIP Property · 에이아이피프라퍼티</div>
+        <h3>공간을 운영하고,<br><em>경험</em>을 설계합니다.</h3>
+        <p>에이아이피프라퍼티(AIP Property)는 호텔과 고급 주거 공간을 기획·운영하고, 인바운드 및 VIP 프라이빗 여행을 통해 머무는 공간과 경험을 함께 설계하는 종합 호스피탈리티 기업입니다.</p>
+        <p>글로벌 럭셔리 호텔 브랜드에서 쌓은 운영 역량을 바탕으로, 우리는 건물이 아닌 <b>운영 데이터와 고객 관계</b>를 핵심 자산으로 삼습니다. 위탁운영과 임차 기반의 자산경량(Asset-light) 구조로 단계적으로 검증하며 성장합니다.</p>
+        <p>AIP Spaces는 그 운영 노하우를 비즈니스 공간으로 확장한 대관 서비스입니다. 회의·행사 공간에 공연 · 강연 · 웰니스 콘텐츠와 숙박, VIP 의전, 프라이빗 투어까지 연결해 드립니다.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar pl-property"><i class="pl-fade" aria-hidden="true"></i><div class="en">Property</div><h4>AIP Property</h4><p>호텔 · 레지던스 · 고급 주거 공간 기획 및 운영</p></div>
+        <div class="pillar pl-travel"><div class="en">Travel</div><h4>AIP Travel</h4><p>인바운드 · VIP 프라이빗 여행 큐레이션</p></div>
+        <div class="pillar pl-space"><div class="en">Integrated Hospitality</div><h4>공간 × 경험</h4><p>머무는 곳과 하는 일을 하나의 여정으로 연결합니다.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-cream">
+    <div class="wrap">
+      <div class="sec-title"><div class="en">Business</div><h3>AIP의 사업 영역</h3><p>체류 · 생활 · 경험을 잇는 세 가지 축</p></div>
+      <div class="grid g3">
+        <div class="biz"><div class="no">01</div><div class="en">Residential Living</div><h4>주거 · 체류 운영</h4><p>레지던스 등 체류 공간 운영을 통해 안정적인 수익과 고객 기반을 확보합니다. 운영 중심의 임대 모델로 장기적인 고객 관계를 구축합니다.</p></div>
+        <div class="biz"><div class="no">02</div><div class="en">Aging in Place</div><h4>에이징 인 플레이스</h4><p>장기체류에 건강 · 관계 · 생활 서비스를 결합하는 모델입니다. 유연하고 선택 가능한 체류 방식으로 삶의 질을 높입니다.</p></div>
+        <div class="biz"><div class="no">03</div><div class="en">Active Life Services</div><h4>액티브 라이프 서비스</h4><p>맞춤형 여행, 활동 프로그램, 커뮤니티 이벤트를 연계합니다. AIP Spaces의 공간 대관과 콘텐츠 프로그램도 이 경험 설계의 일부입니다.</p></div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="sec-title"><div class="en">Partnership</div><h3>Grape × AIP</h3></div>
+      <div class="partner">
+        <div>
+          <div class="badge"><span>GRAPE</span><i>×</i><img src="images/logo-navy.svg" alt="AIP"></div>
+          <h4>대관 중개 및 문화관광 · 웰니스 콘텐츠 업무협약</h4>
+          <p>2026년 11월 체결 · 공유라운지 기반 오피스 라이프스타일 플랫폼 ㈜그레이프와 체결한 제휴입니다.</p>
+          <p style="margin-top:14px"><a href="https://www.mbn.co.kr/news/society/5230318" target="_blank" rel="noopener" style="color:var(--gold);font-weight:500">관련 보도 보기 ↗</a></p>
+        </div>
+        <div class="box" style="border:0;padding:0">
+          <ul>
+            <li><b>Grape</b> — 공간 정보 · 이용조건 제공, 예약 가능 여부 확인 및 승인, 시설 운영</li>
+            <li><b>AIP</b> — 대관 고객 상담 · 소개, 문화예술 · 웰니스 · 강연 콘텐츠 기획과 전문인력 섭외</li>
+            <li>그레이프 각 지점 이용요금과 동일한 금액으로 안내합니다.</li>
+            <li>공간 · 식음료 · 공연 · 강연 · 웰니스를 결합한 공동 상품을 함께 개발합니다.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-cream">
+    <div class="wrap">
+      <div class="sec-title"><div class="en">Direction</div><h3>우리가 일하는 방식</h3></div>
+      <div class="grid g4">
+        <div class="value"><div class="circle">Data</div><h5>운영 데이터</h5><p>건물보다 운영 데이터와 고객 관계를 핵심 자산으로 봅니다.</p></div>
+        <div class="value"><div class="circle">Light</div><h5>자산경량 운영</h5><p>위탁운영 · 임차 기반으로 초기 자본 리스크를 줄입니다.</p></div>
+        <div class="value"><div class="circle">LTV</div><h5>고객 생애가치</h5><p>단기 예약률보다 오래 함께하는 관계를 지향합니다.</p></div>
+        <div class="value"><div class="circle">Curate</div><h5>안내가 아닌 큐레이션</h5><p>양과 속도보다 깊이와 품질로 설계합니다.</p></div>
+      </div>
+    </div>
+  </section>
+  <div class="quote">
+    <p>“Where Life Finds Its Place.”</p><span>AIP PROPERTY</span>
+    <i class="q-line"></i>
+    <div class="q-en">Our Philosophy</div>
+    <h4 class="q-h">Creating Places to Belong, Experiences to Cherish.</h4>
+    <div class="q-ko">공간을 넘어 사람과 경험, 삶의 가치를 만들어갑니다.</div>
+  </div>
+</div>
+
+<!-- RESERVATION -->
+<div class="view" id="v-reservation">
+  <div class="phead"><div class="wrap"><div class="crumb"><a data-go="home">Home</a> › Reservation › <span id="crumbRes">공간 예약</span></div><h2>RESERVATION</h2><p>AIP가 신청을 접수해 그레이프 지점에 예약 가능 여부를 확인한 뒤 연락드립니다.</p></div></div>
+  <section>
+    <div class="wrap">
+      <div class="tabs">
+        <button class="tab" data-go="booking">공간 예약</button><button class="tab" data-go="confirm">예약확인/취소</button><button class="tab" data-go="pricing">비용 안내</button><button class="tab" data-go="tour">투어 신청</button><button class="tab" data-go="filming">촬영대관 문의</button>
+      </div>
+
+      <div class="pane" id="p-booking">
+        <div class="form-layout">
+          <form id="fBooking" data-kind="공간 예약 신청" novalidate>
+            <div class="row">
+              <div><label>지점 <i>*</i></label><select name="지점" id="bLoc" required></select></div>
+              <div><label>공간 <i>*</i></label><select name="공간" id="bRoom" required></select></div>
+            </div>
+            <div class="row three">
+              <div><label>이용일 <i>*</i></label><input type="date" name="이용일" id="bDate" required></div>
+              <div><label>시작 시간 <i>*</i></label><select name="시작" id="bStart" required></select></div>
+              <div><label>종료 시간 <i>*</i></label><select name="종료" id="bEnd" required></select></div>
+            </div>
+            <div class="row">
+              <div><label>예상 인원 <i>*</i></label><input type="number" name="인원" id="bPeople" min="1" placeholder="명" required></div>
+              <div><label>행사 유형</label><select name="행사유형"><option>회의</option><option>세미나 · 강연</option><option>사업설명회</option><option>주주총회</option><option>기자간담회</option><option>VIP 접견 · 조찬</option><option>기업 파티 · 이벤트</option><option>면접 · 교육</option><option>기타</option></select></div>
+            </div>
+            <div class="row">
+              <div><label>담당자명 <i>*</i></label><input name="담당자" required></div>
+              <div><label>회사 / 단체명 <i>*</i></label><input name="회사" required></div>
+            </div>
+            <div class="row">
+              <div><label>연락처 <i>*</i></label><input type="tel" name="연락처" placeholder="010-0000-0000" required></div>
+              <div><label>이메일 <i>*</i></label><input type="email" name="이메일" required></div>
+            </div>
+            <div class="row">
+              <div><label>콘텐츠 프로그램</label><select name="콘텐츠"><option>필요 없음</option><option>문화예술 공연 (성악 · 기악 · 국악)</option><option>웰니스 (요가 · 명상 · 건강강연)</option><option>전문가 강연 · CS 교육</option><option>와인 강연 · 체험</option><option>상담 후 결정</option></select></div>
+              <div><label>케이터링 · 연계 서비스</label><select name="연계서비스"><option>필요 없음</option><option>케이터링</option><option>숙박 연계</option><option>VIP 의전 · 차량</option><option>행사 후 프라이빗 투어</option><option>상담 후 결정</option></select></div>
+            </div>
+            <div class="row one"><div><label>요청사항</label><textarea name="요청사항" placeholder="좌석 배치(U자형 · 극장형 등), 화상장비, 현수막, 셋업 시간 등"></textarea></div></div>
+            <label class="agree"><input type="checkbox" required> <span><a data-go="privacy" style="text-decoration:underline">개인정보 수집 · 이용 및 제3자(㈜그레이프) 제공</a>에 동의합니다. 예약 확인을 위해 신청 내용이 해당 지점에 전달됩니다.</span></label>
+            <button class="btn btn-dark" type="submit">예약 신청하기</button>
+          </form>
+          <aside class="summary">
+            <h5>예약 요약</h5>
+            <dl>
+              <dt>지점</dt><dd id="sLoc">-</dd><dt>공간</dt><dd id="sRoom">-</dd><dt>수용</dt><dd id="sCap">-</dd><dt>일시</dt><dd id="sTime">-</dd><dt>시간당</dt><dd id="sRate">-</dd>
+            </dl>
+            <div class="total"><span>예상 대관료</span><b id="sTotal">0원</b></div>
+            <small id="sNote"></small>
+            <small>※ VAT 포함 · 그레이프 지점 이용요금과 동일<br>※ 세팅 · 철거 시간은 대관 시간에 포함됩니다.<br>※ 운영시간 09–18시, 18시 이후는 협의 후 확정됩니다.<br>※ 최종 금액은 지점 확인 후 견적서로 안내됩니다.</small>
+          </aside>
+        </div>
+      </div>
+
+      <div class="pane" id="p-confirm">
+        <div class="form-layout">
+          <form id="fConfirm" data-kind="예약 확인·변경·취소 요청" novalidate>
+            <div class="row">
+              <div><label>예약자명 <i>*</i></label><input name="예약자" required></div>
+              <div><label>연락처 <i>*</i></label><input type="tel" name="연락처" required></div>
+            </div>
+            <div class="row">
+              <div><label>지점</label><select name="지점" class="locSel"></select></div>
+              <div><label>이용일 <i>*</i></label><input type="date" name="이용일" required></div>
+            </div>
+            <div class="row">
+              <div><label>요청 유형 <i>*</i></label><select name="요청유형"><option>예약 내역 확인</option><option>일정 · 인원 변경</option><option>예약 취소</option></select></div>
+              <div><label>이메일</label><input type="email" name="이메일"></div>
+            </div>
+            <div class="row one"><div><label>상세 내용</label><textarea name="상세" placeholder="변경 희망 일시, 취소 사유 등"></textarea></div></div>
+            <label class="agree"><input type="checkbox" required> <span><a data-go="privacy" style="text-decoration:underline">개인정보 수집 · 이용 및 제3자 제공</a>에 동의합니다.</span></label>
+            <button class="btn btn-dark" type="submit">요청하기</button>
+          </form>
+          <div class="box">
+            <h5>취소 · 환불 안내</h5>
+            <ul>
+              <li>당일 취소 및 노쇼: 대관료 100% 청구, 환불 불가</li>
+              <li>그 외 취소 · 환불 기준은 지점마다 다르며, 계약 전 그레이프 지점에서 개별 고지합니다.</li>
+              <li>인원 · 시간 등 일부 축소 시 취소수수료는 축소된 항목 금액 기준으로 산정합니다.</li>
+              <li>변경 · 취소는 접수 시점 기준으로 적용되니 가능한 빨리 요청해 주세요.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="pane" id="p-pricing">
+        <p class="note" style="margin:0 0 28px">2026년 그레이프 통합 공간 안내서 기준 · 시간당 요금 · <b>VAT 포함</b> · 그레이프 지점 이용요금과 동일합니다.</p>
+        <div id="priceTables"></div>
+        <div class="price-sec">
+          <h4>예약 및 결제 안내</h4>
+          <div class="policy">
+            <div><b>계약</b><span>지점 확인 후 견적서 · 계약서 발송 → 사업자등록증 · 대관신청서 · 참석인원 제출</span></div>
+            <div><b>예약금 · 잔금</b><span>대관일 3일 전까지 예약금 납입 시 확정 · 잔금은 대관일 이전 카드 또는 계좌이체</span></div>
+            <div><b>취소</b><span>당일 취소 · 노쇼 시 100% 청구 · 그 외 기준은 지점별 상이(계약 시 고지)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pane" id="p-tour">
+        <div class="form-layout">
+          <form id="fTour" data-kind="공간 투어 신청" novalidate>
+            <div class="row">
+              <div><label>지점 선택 <i>*</i></label><select name="지점" class="locSel" required></select></div>
+              <div><label>희망 날짜 <i>*</i></label><input type="date" name="희망날짜" required></div>
+            </div>
+            <div class="row">
+              <div><label>신청자명 <i>*</i></label><input name="신청자" required></div>
+              <div><label>회사명</label><input name="회사"></div>
+            </div>
+            <div class="row">
+              <div><label>연락처 <i>*</i></label><input type="tel" name="연락처" required></div>
+              <div><label>이메일</label><input type="email" name="이메일"></div>
+            </div>
+            <div class="row one"><div><label>요청사항</label><textarea name="요청사항" placeholder="희망 시간대, 관심 공간, 예정 행사 규모 등"></textarea></div></div>
+            <label class="agree"><input type="checkbox" required> <span><a data-go="privacy" style="text-decoration:underline">개인정보 수집 · 이용 및 제3자 제공</a>에 동의합니다.</span></label>
+            <button class="btn btn-dark" type="submit">투어 신청하기</button>
+          </form>
+          <div class="box"><h5>공간 투어 안내</h5><ul><li>대관 전 공간을 직접 둘러보실 수 있습니다.</li><li>신청 후 AIP 담당자가 지점과 일정을 확정해 연락드립니다.</li><li>투어는 평일 운영시간(09–18시) 내 진행됩니다.</li><li>방문 시 1층 안내데스크에서 신분증 또는 명함으로 출입증을 발급받으세요.</li></ul></div>
+        </div>
+      </div>
+
+      <div class="pane" id="p-filming">
+        <div class="form-layout">
+          <form id="fFilm" data-kind="촬영대관 문의" novalidate>
+            <div class="row">
+              <div><label>희망 지점 <i>*</i></label><select name="지점" class="locSel" required></select></div>
+              <div><label>촬영 유형 <i>*</i></label><select name="촬영유형"><option>광고 · CF</option><option>드라마 · 영화</option><option>방송 촬영</option><option>유튜브 · SNS 콘텐츠</option><option>화보 · 스틸</option><option>기업 홍보영상</option><option>기타</option></select></div>
+            </div>
+            <div class="row three">
+              <div><label>희망 일자 <i>*</i></label><input type="date" name="희망일자" required></div>
+              <div><label>예상 시간</label><input name="예상시간" placeholder="예) 09:00–20:00"></div>
+              <div><label>스태프 규모</label><input type="number" name="스태프" min="1" placeholder="명"></div>
+            </div>
+            <div class="row">
+              <div><label>담당자명 <i>*</i></label><input name="담당자" required></div>
+              <div><label>제작사 / 회사명</label><input name="회사"></div>
+            </div>
+            <div class="row">
+              <div><label>연락처 <i>*</i></label><input type="tel" name="연락처" required></div>
+              <div><label>이메일 <i>*</i></label><input type="email" name="이메일" required></div>
+            </div>
+            <div class="row one"><div><label>촬영 내용 · 요청사항</label><textarea name="촬영내용" placeholder="촬영 콘셉트, 필요 공간, 장비 반입(화물 엘리베이터 사용 여부) 등"></textarea></div></div>
+            <label class="agree"><input type="checkbox" required> <span><a data-go="privacy" style="text-decoration:underline">개인정보 수집 · 이용 및 제3자 제공</a>에 동의합니다.</span></label>
+            <button class="btn btn-dark" type="submit">촬영대관 문의하기</button>
+          </form>
+          <div class="box"><h5>촬영대관 안내</h5><ul><li>영화 · 드라마 · 광고 · 방송 · 유튜브 · SNS 촬영이 가능합니다.</li><li>공간 · 일정 확인 후 별도 견적으로 진행됩니다.</li><li>화물 엘리베이터는 사전 협의 시에만 이용 가능합니다.</li><li>협의 없는 가구 · 장비 이동은 금지되며, 이용 후 원상복구가 필요합니다.</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- GUIDE -->
+<div class="view" id="v-guide">
+  <div class="phead"><div class="wrap"><div class="crumb"><a data-go="home">Home</a> › 공간안내서</div><h2>SPACE GUIDE</h2><p>지점별 공간안내서(공간 구성 · 시설 · 요금)를 이메일로 보내드립니다.</p></div></div>
+  <section><div class="wrap"><div class="grid" id="guideList" style="gap:16px"></div></div></section>
+</div>
+
+<!-- PRIVACY -->
+<div class="view" id="v-privacy">
+  <div class="phead"><div class="wrap"><div class="crumb"><a data-go="home">Home</a> › 개인정보처리방침</div><h2>PRIVACY</h2><p>㈜에이아이피프라퍼티 개인정보 수집 · 이용 및 제3자 제공 안내</p></div></div>
+  <section><div class="wrap policy-doc" style="max-width:860px">
+    <h5>1. 수집 항목</h5><p>필수: 성명, 연락처, 이메일(일부 양식), 회사명(예약 신청) · 선택: 요청사항 등 신청서에 입력한 내용</p>
+    <h5>2. 수집 · 이용 목적</h5><p>대관 상담, 예약 가능 여부 확인, 견적 · 계약 안내, 공간 투어 및 촬영대관 일정 조율, 콘텐츠 프로그램 안내</p>
+    <h5>3. 제3자 제공</h5><ul><li>제공받는 자: 주식회사 그레이프 (해당 공간 운영 지점)</li><li>제공 목적: 예약 가능 여부 확인, 예약 승인, 계약 및 시설 이용 안내</li><li>제공 항목: 성명, 연락처, 이메일, 회사명, 신청 내용</li><li>보유 기간: 제공 목적 달성 시까지 (관계 법령에 따른 보관 기간 별도)</li></ul>
+    <h5>4. 보유 및 이용 기간</h5><p>상담 · 이용 종료 후 1년간 보관 후 파기합니다. 단, 관계 법령에 따라 보존이 필요한 경우 해당 기간 동안 보관합니다.</p>
+    <h5>5. 동의 거부 권리</h5><p>개인정보 수집 · 이용 및 제공에 동의하지 않으실 수 있으며, 이 경우 온라인 신청이 제한됩니다. 전화로 문의해 주시면 안내드리겠습니다.</p>
+    <h5>6. 개인정보 보호 문의</h5><p id="privContact"></p>
+  </div></section>
+</div>
+</main>
+
+<div class="band"><div class="wrap"><div><h3>행사에 맞는 공간, AIP가 찾아드립니다.</h3><p>규모 · 예산 · 일정만 알려주시면 최적의 지점과 공간을 제안합니다.</p></div><a class="btn btn-gold" data-go="booking">예약 · 상담 신청</a></div></div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="logo" data-go="home" style="margin-bottom:18px"><img src="images/logo-white.svg" alt="AIP"><i class="div"></i><span>SPACES</span></div>
+        <p id="bizInfo"></p>
+      </div>
+      <div><h6>Spaces</h6><div id="footLocs"></div></div>
+      <div><h6>AIP Group</h6>
+        <a href="https://www.aipproperty.co.kr" target="_blank" rel="noopener">AIP Property ↗</a>
+        <a href="https://www.aiptravel.kr" target="_blank" rel="noopener">AIP Travel ↗</a>
+        <a data-go="about">About Us</a><a data-go="pricing">비용 안내</a><a data-go="privacy">개인정보처리방침</a>
+      </div>
+    </div>
+    <div class="copy"><span>© 2026 AIP Property Co., Ltd. All rights reserved. · 공간 운영: ㈜그레이프</span><span>Seoul · Incheon</span></div>
+  </div>
+</footer>
+
+<div class="modal" id="modal"><div class="dialog">
+  <h4 id="mTitle"></h4>
+  <p class="lead" id="mLead"></p>
+  <pre id="mBody"></pre>
+  <div class="acts" id="mActs">
+    <button class="btn btn-line" style="color:var(--ink)" id="mClose">닫기</button>
+    <button class="btn btn-line" style="color:var(--ink)" id="mCopy">내용 복사</button>
+    <a class="btn btn-gold" id="mMail">이메일로 보내기</a>
+  </div>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+/* =========================================================
+   CONFIG — 연락처 · 사업자 정보 · 리더십 · 메일 수신 설정
+   이 블록만 고치면 사이트 전체에 반영됩니다.
+   ========================================================= */
+const CONFIG = {
+  emails: ['sws0311@gmail.com', 'ktca0311@gmail.com'],   // 신청서 수신 (첫 번째: 기본, 나머지: 참조)
+  phones: ['010-4373-4413', '010-2162-6929'],
+  // FormSubmit(무료 폼→이메일 서비스). 첫 신청 시 sws0311@gmail.com 으로 '활성화' 메일이 오며, 1회 승인하면 이후 자동 수신됩니다.
+  formEndpoint: 'https://formsubmit.co/ajax/sws0311@gmail.com',
+  biz: {
+    name: '주식회사 에이아이피프라퍼티 (AIP Property Co., Ltd.)',
+    ceo: '심우섭',
+    regNo: '841-81-03090'
+  },
+};
+
+/* 지점 사진 [파일번호, 사진 속 명칭] — 첫 번째가 대표 사진. images/<지점>/NN.jpg (원본), NN_t.jpg (썸네일) */
+const PHOTOS={"centropolis": [["14", "세미 라운지 · Semi Lounge"], ["01", "이그제큐티브 보드룸 · Executive Boardroom"], ["02", "이그제큐티브 보드룸 · Executive Boardroom"], ["03", "센트로 라운지 · Cafe Lounge"], ["04", "센트로 라운지 · Cafe Lounge"], ["05", "컨퍼런스룸 · Conference Room"], ["06", "컨퍼런스룸 · Conference Room"], ["07", "컨퍼런스룸 · Conference Room"], ["08", "컨퍼런스룸 · Conference Room"], ["09", "미팅룸 · Meeting Room"], ["10", "미팅룸 · Meeting Room"], ["11", "리프레시 라운지 · Refresh Lounge"], ["12", "리프레시 라운지 · Refresh Lounge"], ["13", "리프레시 라운지 · Refresh Lounge"], ["15", "세미 라운지 · Semi Lounge"], ["16", "세미 라운지 · Semi Lounge"], ["17", "세미 라운지 · Semi Lounge"], ["18", "세미 라운지 · Semi Lounge"], ["19", "VIP룸 · Executive Lounge"], ["20", "VIP룸 · Executive Lounge"]], "switch22": [["14", "SWITCH 22 라운지 · 한강뷰"], ["01", "릴렉스 라운지 · Relax Lounge"], ["02", "MUSIC LOUNGE · 뮤직 라운지"], ["03", "미팅룸 M1"], ["04", "미팅룸 M2"], ["05", "SWITCH HALL · U자형 배치 (20인)"], ["06", "SWITCH HALL · U자형 배치 (20인)"], ["07", "익스클루시브 라운지 · VIP룸 대관"], ["08", "익스클루시브 라운지 · VIP룸 대관"], ["09", "익스클루시브 라운지 · VIP존"], ["10", "익스클루시브 라운지 · VIP존"], ["11", "VIP2+3 회의실"], ["12", "SWITCH 22 라운지 · 한강뷰"], ["13", "SWITCH 22 라운지 · 한강뷰"], ["15", "SWITCH 22 라운지 · 한강뷰"], ["16", "SWITCH 22 라운지 · 한강뷰"]], "lounge107": [["05", "미팅 라운지 · Meeting Lounge"], ["01", "대회의실 라운지"], ["02", "대회의실 라운지"], ["03", "대회의실 라운지"], ["04", "대회의실 라운지"], ["06", "미팅 라운지 · Meeting Lounge"], ["07", "미팅 라운지 · Meeting Lounge"], ["08", "미팅 라운지 · Meeting Lounge"], ["09", "미팅 라운지 · Meeting Lounge"], ["10", "미팅 라운지 · Meeting Lounge"], ["11", "미팅 라운지 · Meeting Lounge"], ["12", "미팅룸 4·5 + 미팅 라운지 연결 사용"], ["13", "미팅룸 4·5 + 미팅 라운지 연결 사용"]], "signature": [["04", "라운지"], ["01", "GRAPE LOUNGE 내부 전경"], ["02", "GRAPE LOUNGE 내부 전경"], ["03", "GRAPE LOUNGE 외관"], ["05", "라운지"], ["06", "라운지"], ["07", "세미나실 외부 전경"], ["08", "세미나실1"], ["09", "세미나실1"], ["10", "세미나실1"], ["11", "세미나실1+2"], ["12", "세미나실1+2"], ["13", "세미나실1+2"], ["14", "세미나실2"], ["15", "세미나실2"], ["16", "세미나실1+2"], ["17", "소회의실1"], ["18", "소회의실1"], ["19", "소회의실1"], ["20", "소회의실2"], ["21", "소회의실2"], ["22", "소회의실3"], ["23", "소회의실3"], ["24", "소회의실3"], ["25", "소회의실3"], ["26", "중회의실1 외부 전경"], ["27", "중회의실1"], ["28", "중회의실1"], ["29", "중회의실1"], ["30", "중회의실1"], ["31", "중회의실1"], ["32", "중회의실2"], ["33", "중회의실2"], ["34", "중회의실2"]]};
+
+/* 공간 데이터 — 2026 그레이프 통합 공간 안내서 기준 (VAT 포함, 시간당)
+   [공간명, 면적(평), 수용, 1인당, 시간당, 비고]  null = 별도 문의
+   사진: images/loc-<id>.jpg 파일을 넣으면 자동 표시됩니다. */
+const LOCS=[
+ {id:'centropolis',name:'CENTROPOLIS',kr:'센트로폴리스점',area:'종각',addr:'서울 종로구 우정국로 26 센트로폴리스 3층',cls:'p3',mark:'CTR',max:'~250',
+  intro:'종각 센트로폴리스 3층의 컨퍼런스 전문 지점입니다. 120인 규모의 대형 컨퍼런스부터 리셉션용 라운지, VIP 접견을 위한 이그제큐티브 라운지 · 보드룸까지 갖췄습니다.',
+  zones:['Conference','Executive','Lounge'],
+  rooms:[['Conference Room 1',28.7,40,4125,165000,'세미나 · 강의'],['Conference Room 1+2',58.2,80,4125,330000,'중형 행사'],['Conference Room 1+2+3',86.5,120,3850,462000,'대형 컨퍼런스'],['Executive Lounge',14.2,7,25142,176000,'VIP 접견'],['Executive Boardroom',null,19,16789,319000,'임원 회의 · 화상장비 사용 시 +30%'],['Seminar Room',null,24,4125,99000,'교육 · 발표 · 화상장비 사용 시 +30%'],['Exclusive & Centro Lounge',182.7,100,null,null,'리셉션 · 행사']],
+  facil:['빔프로젝터 · 마이크 · 스크린','화상회의 장비 (보드룸 · 세미나룸 +30%)','A/V 장비','VIP 프라이빗 접견실 · 프라이빗 동선']},
+ {id:'switch22',name:'SWITCH 22',kr:'Parc.1 여의도점',area:'여의도',addr:'서울 영등포구 여의대로 108 NH금융타워(타워2) 22층',cls:'p1',mark:'S22',max:'~150',
+  intro:'여의도 파크원 22층, 한강 파노라마뷰가 펼쳐지는 호텔 라운지 콘셉트의 프리미엄 공간입니다. 뮤직 라운지 · 미팅존 · VIP존으로 구성되며, VIP 접견과 기업 이벤트에 특히 적합합니다.',
+  zones:['Music Lounge','Meeting Zone','VIP Zone','Han River View'],
+  rooms:[['SWITCH HALL',18.88,30,8333,250000,'세미나 · 행사 · 기자간담회'],['MUSIC LOUNGE',28.68,50,23760,1188000,'뮤직 · 이벤트'],['VIP1',12.86,6,33333,200000,'VIP 접견'],['VIP2+3',11.77,16,22500,360000,'VIP 접견'],['VIP4',10.07,8,22500,180000,'VIP 접견'],['미팅룸 M1',6.65,6,10000,60000,'미팅'],['미팅룸 M2',3.63,4,10000,40000,'미팅'],['미팅룸 M3',6.14,6,10000,60000,'미팅'],['미팅룸 M4+5',9.68,12,10000,120000,'미팅']],
+  facil:['한강 파노라마뷰','빔프로젝터 · 마이크 · 스크린 · 음향','화상회의 장비 지원','VIP 프라이빗 접견실']},
+ {id:'lounge107',name:'LOUNGE 107',kr:'타워107점',area:'을지로3가',addr:'서울 중구 마른내로 27 타워107 2층',cls:'p4',mark:'107',max:'~100',
+  intro:'을지로3가 타워107 2층의 미팅 · 컨퍼런스 지점입니다. 독립형 미팅룸 7개와 최신 음향시스템을 갖춘 84인 컨퍼런스, 저녁 리셉션을 위한 카페 라운지를 운영합니다.',
+  zones:['Meeting Zone ×7','Conference','Café Lounge'],
+  rooms:[['컨퍼런스 전체 (5칸)',47,84,3535,297000,'대형 강연 · 최신 음향시스템'],['카페 라운지',93,90,6111,550000,'행사 · 리셉션 · 18시 이후 대관'],['미팅룸 1',6.1,6,5500,33000,'독립형 소규모 미팅'],['미팅룸 2',6.1,6,5500,33000,'독립형 소규모 미팅'],['미팅룸 3+4',19.8,16,5500,88000,'커넥팅룸 · 중형 미팅'],['미팅룸 5',null,8,5500,44000,'프라이빗 · 라운지 연계'],['미팅룸 6',null,8,5500,44000,'프라이빗 · 라운지 연계'],['미팅룸 7',null,12,5500,66000,'육각형 테이블 · 토론 · 워크숍']],
+  facil:['최신 음향시스템 (컨퍼런스)','빔프로젝터 · 마이크 · 스크린','화상회의 장비 지원','카페 라운지 (18시 이후 대관)']},
+ {id:'signature',name:'GRAPE LOUNGE',kr:'시그니처타워점',area:'을지로',addr:'서울 중구 청계천로 100 시그니처타워 동관 B1',cls:'p2',mark:'SIG',max:'~100',
+  intro:'청계천변 시그니처타워 지하 1층의 세미나 · 교육 중심 지점입니다. 90인 세미나실부터 면접용 소회의실까지 갖췄으며, 현수막 설치가 가능해 사업설명회 · 주주총회에 적합합니다.',
+  zones:['Seminar','Meeting','Lounge'],
+  rooms:[['세미나실 1+2',38,90,2800,252000,'대형 행사 · 주주총회 · 현수막 설치 가능'],['세미나실 1',23,60,2933,176000,'강연 · 설명회 · 빔프로젝터'],['세미나실 2',15,60,null,null,'강연 · 설명회'],['중회의실 1',14,20,3850,77000,'단체 회의 · 면접 · 교육'],['중회의실 2',8,14,4571,64000,'워크숍 · 교육'],['소회의실 1',5.7,10,5400,54000,'화이트보드 일체형 · 면접'],['소회의실 2',3.5,6,4333,26000,'통창 인테리어'],['소회의실 3',3.5,6,4333,26000,'통창 인테리어'],['라운지 전체 대관',null,'100+',null,null,'세미나 + 라운지 · 리셉션 · 전시']],
+  facil:['빔프로젝터 · 마이크 · 스크린','현수막 설치 가능 (세미나실 1+2)','화상회의 장비 지원','라운지 카페']}
+];
+
+const SVCS=[
+ {en:'Meeting Room',kr:'미팅룸',d:'업무 · 학습 · 미팅에 최적화된 공간을 제공합니다.',li:['일반 회의실과 프리미엄 라운지 회의실','4인부터 120인까지','VIP 접견실 · 이그제큐티브 보드룸'],ic:'M4 6h16v10H4zM8 20h8M12 16v4'},
+ {en:'Conference',kr:'컨퍼런스',d:'교육 · 행사 · 면접 · 세미나 등에 적합한 공간을 제공합니다.',li:['세미나 · 사업설명회 · 주주총회','기자간담회 · 교육장 · 면접장','촬영대관'],ic:'M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6'},
+ {en:'Office',kr:'오피스',d:'고객의 니즈를 반영한 프라이빗 오피스, 코워킹 등의 사무공간을 제공합니다.',li:['프라이빗 오피스','코워킹 스페이스','라운지 오피스'],ic:'M4 21V5h10v16M14 9h6v12M7 9h4M7 13h4M7 17h4'},
+ {en:'Community',kr:'커뮤니티',d:'동호회 · 취미모임 · 헬스 · 라운지 등의 공간 서비스를 제공합니다.',li:['전문 바리스타 서비스','헬스클럽 · 릴렉스존','고급 라운지'],ic:'M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM16 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 20c0-3 3-5 6-5s6 2 6 5M14 15c3 0 8 1 8 5'},
+ {en:'Café & Lounge',kr:'카페 & 라운지',d:'모든 지점에서 프리미엄 원두와 전문 바리스타의 시그니처 음료를 제공합니다.',li:['프리미엄 원두','바리스타 시그니처 음료','행사용 음료 · 디저트 사전 주문'],ic:'M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2 2 0 0 1 0 4h-2M7 3v2M11 3v2'},
+ {en:'AIP Contents',kr:'콘텐츠 프로그램',d:'대관과 결합하거나 단독으로 AIP가 기획 · 섭외하는 프로그램입니다.',li:['문화예술 공연 (성악 · 기악 · 국악 · 해설공연)','웰니스 (요가 · 명상 · 호흡 · 전문가 건강강연)','전문가 강연 · CS 교육 · 소믈리에 와인 클래스','문화관광 · VIP 문화교류 프로그램'],ic:'M9 18V5l12-2v13M9 18a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM21 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0z'}
+];
+
+const FLOW=[['대관 문의','공간 · 날짜 · 시간 · 인원을 AIP에 문의','AIP'],['가능 여부 확인','AIP가 해당 지점에 일정 확인 후 회신','AIP · Grape'],['견적 · 계약','견적서 · 계약서 수신, 사업자등록증 · 대관신청서 제출','Grape'],['예약금 · 잔금','대관일 3일 전까지 예약금으로 확정, 잔금은 대관일 이전','Grape'],['행사 · 원상복구','세팅 · 철거는 대관 시간에 포함, 이용 후 정리','현장']];
+
+/* ========================================================= */
+const won=n=>n==null?'별도 문의':n.toLocaleString('ko-KR')+'원';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const svgIcon=p=>`<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="${p}"/></svg>`;
+const minRate=l=>Math.min(...l.rooms.filter(r=>r[4]).map(r=>r[4]));
+const phStyle=l=>{const p=(PHOTOS[l.id]||[])[0];return p?`style="background-image:url('images/${l.id}/${p[0]}.jpg'),var(--g-${l.cls})"`:''};
+
+function locCard(l){return `<div class="loc-card" data-go="loc-${l.id}">
+  <div class="ph ${l.cls}" ${phStyle(l)}><span class="mark">${l.mark}</span><span class="tag">${l.area}</span></div>
+  <div class="loc-body"><div class="kr">${l.kr}</div><h4>${l.name}</h4><div class="addr">${l.addr}</div>
+  <div class="chips"><span class="chip">${l.rooms.length}개 공간</span><span class="chip">사진 ${(PHOTOS[l.id]||[]).length}장</span><span class="chip">최대 ${l.max}명</span><span class="chip">${won(minRate(l))}~/시간</span></div></div></div>`}
+function svcCard(s){return `<div class="svc"><div class="ico">${svgIcon(s.ic)}</div><div class="en">${s.en}</div><h4>${s.kr}</h4><p>${s.d}</p><ul>${s.li.map(x=>`<li>${x}</li>`).join('')}</ul></div>`}
+function priceTable(l){return `<div class="tbl-wrap"><table><thead><tr><th>공간</th><th class="num">면적</th><th class="num">수용</th><th class="num">1인당</th><th class="num">시간당</th><th>용도 · 비고</th></tr></thead><tbody>${l.rooms.map(r=>`<tr><td class="rn">${r[0]}</td><td class="num" data-l="면적">${r[1]?r[1]+'평':'-'}</td><td class="num" data-l="수용">${r[2]}인</td><td class="num" data-l="1인당">${r[3]?won(r[3]):'-'}</td><td class="num pr" data-l="시간당"><b>${won(r[4])}</b></td><td class="nt"><small>${r[5]}</small></td></tr>`).join('')}</tbody></table></div>`}
+
+$('#homeLocs').innerHTML=LOCS.map(locCard).join('');
+$('#allLocs').innerHTML=LOCS.map(locCard).join('');
+$('#homeSvc').innerHTML=[SVCS[0],SVCS[1],SVCS[5]].map(svcCard).join('');
+$('#allSvc').innerHTML=SVCS.map(svcCard).join('');
+$('#flow').innerHTML=FLOW.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span><br><em class="who">${f[2]}</em></div>`).join('');
+$('#subLoc').innerHTML=`<li><a data-go="locations">모든 지점</a></li>`+LOCS.map(l=>`<li><a data-go="loc-${l.id}">${l.name} (${l.kr})</a></li>`).join('');
+$('#subGuide').innerHTML=`<li><a data-go="guide">통합 공간안내서</a></li>`+LOCS.map(l=>`<li><a data-go="guide">${l.name} (${l.kr})</a></li>`).join('');
+$('#footLocs').innerHTML=LOCS.map(l=>`<a data-go="loc-${l.id}">${l.name} · ${l.kr}</a>`).join('');
+$('#priceTables').innerHTML=LOCS.map(l=>`<div class="price-sec"><h4>${l.name} <span style="color:var(--gold);font-size:15px">${l.kr}</span></h4><div class="meta">${l.addr} · 단위: 원 · VAT 포함</div>${priceTable(l)}</div>`).join('')+`<p class="note" style="margin:-24px 0 40px">※ 운영시간 09:00–18:00 · 18시 이후는 협의 · 세팅과 철거 시간은 대관 시간에 포함됩니다. 요금은 변동될 수 있으며 최종 금액은 견적서로 안내됩니다.</p>`;
+$('#guideList').innerHTML=[{id:'all',name:'GRAPE 통합 공간안내서 2026',kr:'전 지점',addr:'4개 지점 · 30여 개 공간 · 케이터링 · 예약 절차'}].concat(LOCS).map(l=>`<div class="guide"><div class="left"><div class="pdf">PDF</div><div><h5>${l.name} (${l.kr})</h5><p>${l.addr}</p></div></div><button class="btn btn-dark" data-guide="${l.id}">안내서 요청</button></div>`).join('');
+$$('.locSel').forEach(s=>s.innerHTML=LOCS.map(l=>`<option>${l.name} (${l.kr})</option>`).join(''));
+const B=CONFIG.biz;
+$('#bizInfo').innerHTML=`${B.name}<br>대표이사 ${B.ceo} · 사업자등록번호 ${B.regNo}<br>Tel. ${CONFIG.phones.filter(x=>x!=='010-4373-4413').map(x=>`<span class="nb">${x}</span>`).join(' / ')}<br>Email. ${CONFIG.emails.map(x=>`<span class="nb">${x}</span>`).join(' / ')}`;
+$('#privContact').innerHTML=`${B.name} · 개인정보 보호책임자: 대표이사 ${B.ceo} · ${CONFIG.emails[0]} · ${CONFIG.phones[0]}`;
+
+function renderDetail(id){
+  const l=LOCS.find(x=>x.id===id); if(!l) return false;
+  $('#v-detail').innerHTML=`
+  <div class="phead"><div class="wrap"><div class="crumb"><a data-go="home">Home</a> › <a data-go="locations">Locations</a> › ${l.name}</div><h2>${l.name}</h2><p>${l.kr} · ${l.area}</p></div></div>
+  <section><div class="wrap detail-top">
+    ${gallery(l)}
+    <div><p style="font-size:16.5px;color:#374151">${l.intro}</p>
+      <div class="zones">${l.zones.map(z=>`<span class="chip">${z}</span>`).join('')}</div>
+      <ul class="info-list"><li><b>주소</b><span>${l.addr}</span></li><li><b>규모</b><span>${l.rooms.length}개 공간 · 최대 ${l.max}명</span></li><li><b>운영 시간</b><span>09:00–18:00 · 18시 이후 협의</span></li><li><b>대관 문의</b><span>AIP Spaces<br><span class="nb">Min Ho Lee / Sales Director</span> · <span class="nb">010-2162-6929</span><br><span class="nb">sws0311@gmail.com</span></span></li></ul>
+      <div style="display:flex;gap:10px;margin-top:24px;flex-wrap:wrap"><a class="btn btn-dark" data-go="booking" data-loc="${l.id}">이 지점 예약하기</a><a class="btn btn-line" style="color:var(--ink)" data-go="tour">투어 신청</a></div>
+    </div></div></section>
+  <section class="bg-cream"><div class="wrap"><div class="sec-title"><div class="en">Spaces & Rates</div><h3>공간 및 요금</h3></div>${priceTable(l)}<p class="note">단위: 원 / 시간 · VAT 포함 · 그레이프 지점 이용요금과 동일</p></div></section>
+  <section><div class="wrap grid g2">
+    <div class="box"><h5>시설 및 장비</h5><ul>${l.facil.map(f=>`<li>${f}</li>`).join('')}</ul></div>
+    <div class="box"><h5>이용 수칙</h5><ul><li>예약은 지점 확인 · 계약 후 확정됩니다.</li><li>외부 음식 · 음료 반입 불가 (지점 카페 이용, 케이터링 사전 신청)</li><li>건물 내 흡연 금지</li><li>협의 없는 가구 · 장비 이동 금지, 이용 후 원상복구</li><li>방문 시 1층 안내데스크에서 출입증 발급</li></ul></div>
+  </div></section>`;
+  initGallery(l);
+  return true;
+}
+
+/* Gallery carousel — 좌우 화살표 · 스와이프 · 키보드 · 썸네일 */
+function gallery(l){const ps=PHOTOS[l.id]||[];if(!ps.length)return `<div class="ph ${l.cls}"><span class="mark" style="font-size:120px">${l.mark}</span></div>`;
+  return `<div class="gal" id="gal"><div class="gal-main"><div class="gal-track">${ps.map((p,i)=>`<figure class="gal-slide"><img ${i<2?'':'loading="lazy" '}src="images/${l.id}/${p[0]}.jpg" alt="${l.name} ${p[1]}"><figcaption><b>${p[1]}</b><span>${l.name} · ${l.kr}</span></figcaption></figure>`).join('')}</div>
+  <button class="gal-btn prev" aria-label="이전 사진">‹</button><button class="gal-btn next" aria-label="다음 사진">›</button><div class="gal-count"><span id="galIdx">1</span> / ${ps.length}</div></div>
+  <div class="gal-thumbs">${ps.map((p,i)=>`<button data-i="${i}" aria-label="${p[1]}"><img loading="lazy" src="images/${l.id}/${p[0]}_t.jpg" alt=""></button>`).join('')}</div></div>`}
+let galKey=null;
+function initGallery(l){const g=$('#gal');if(!g)return;const tr=g.querySelector('.gal-track'),n=tr.children.length,th=[...g.querySelectorAll('.gal-thumbs button')];let i=0;
+  const go=k=>{i=(k+n)%n;tr.style.transform=`translateX(${-i*100}%)`;$('#galIdx').textContent=i+1;th.forEach((b,j)=>b.classList.toggle('on',j===i));const t=th[i],box=t&&t.parentElement;if(t)box.scrollTo({left:t.offsetLeft-box.clientWidth/2+t.clientWidth/2,behavior:'smooth'})};
+  g.querySelector('.prev').onclick=()=>go(i-1);g.querySelector('.next').onclick=()=>go(i+1);th.forEach(b=>b.onclick=()=>go(+b.dataset.i));
+  let x0=null;const m=g.querySelector('.gal-main');m.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});m.addEventListener('touchend',e=>{if(x0==null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null});
+  if(galKey)document.removeEventListener('keydown',galKey);galKey=e=>{if(!$('#gal'))return;if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)};document.addEventListener('keydown',galKey);go(0)}
+
+/* Router */
+const RES=['booking','confirm','pricing','tour','filming'];
+const RES_KR={booking:'공간 예약',confirm:'예약확인/취소',pricing:'비용 안내',tour:'투어 신청',filming:'촬영대관 문의'};
+function show(name){
+  name=name||'home'; $$('.view').forEach(v=>v.classList.remove('on')); let top=name;
+  if(name.startsWith('loc-')&&renderDetail(name.slice(4))){$('#v-detail').classList.add('on');top='locations'}
+  else if(RES.includes(name)){$('#v-reservation').classList.add('on');top='reservation';
+    $$('.pane').forEach(p=>p.classList.toggle('on',p.id==='p-'+name));$$('.tab').forEach(t=>t.classList.toggle('on',t.dataset.go===name));$('#crumbRes').textContent=RES_KR[name];}
+  else if($('#v-'+name)) $('#v-'+name).classList.add('on');
+  else {$('#v-home').classList.add('on');top='home'}
+  $$('.menu>li>a').forEach(a=>a.classList.toggle('active',a.dataset.top===top));
+  $('#mnav').classList.remove('on'); window.scrollTo(0,0);
+}
+document.addEventListener('click',e=>{
+  const g=e.target.closest('[data-go]');
+  if(g){e.preventDefault(); if(g.dataset.loc){$('#bLoc').value=g.dataset.loc;fillRooms()}
+    const h='#'+g.dataset.go; if(location.hash===h) show(g.dataset.go); else location.hash=h;}
+  const gd=e.target.closest('[data-guide]');
+  if(gd){const l=gd.dataset.guide==='all'?{name:'GRAPE 통합 공간안내서 2026',kr:'전 지점'}:LOCS.find(x=>x.id===gd.dataset.guide);
+    $('#gTarget').value=`${l.name} (${l.kr})`; openGuide();}
+});
+window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
+$('#hamb').onclick=()=>$('#mnav').classList.toggle('on');
+
+/* Booking calc */
+const bLoc=$('#bLoc'),bRoom=$('#bRoom'),bStart=$('#bStart'),bEnd=$('#bEnd'),bDate=$('#bDate');
+bLoc.innerHTML=LOCS.map(l=>`<option value="${l.id}">${l.name} (${l.kr})</option>`).join('');
+const hours=(a,b)=>{let o='';for(let h=a;h<=b;h++)o+=`<option value="${h}">${String(h).padStart(2,'0')}:00</option>`;return o};
+bStart.innerHTML=hours(9,21);bEnd.innerHTML=hours(10,22);
+function fillRooms(){const l=LOCS.find(x=>x.id===bLoc.value);bRoom.innerHTML=l.rooms.map((r,i)=>`<option value="${i}">${r[0]} · ${r[2]}인 · ${r[4]?won(r[4])+'/h':'별도 문의'}</option>`).join('');bStart.value=10;bEnd.value=12;calc()}
+function calc(){const l=LOCS.find(x=>x.id===bLoc.value),r=l.rooms[bRoom.value]||l.rooms[0];
+  const s=+bStart.value,e=+bEnd.value,h=Math.max(0,e-s),t=r[4]?r[4]*h:null;
+  $('#sLoc').textContent=l.name;$('#sRoom').textContent=r[0];$('#sCap').textContent=`최대 ${r[2]}인`;
+  $('#sTime').textContent=(bDate.value||'날짜 미선택')+` · ${h}시간`;$('#sRate').textContent=won(r[4]);$('#sTotal').textContent=t==null?'별도 문의':won(t);
+  const notes=[];if(e>18)notes.push('18시 이후 이용은 지점 협의가 필요합니다.');if(/카페 라운지/.test(r[0]))notes.push('카페 라운지는 18시 이후에만 대관 가능합니다.');if(/\+30%/.test(r[5]))notes.push('화상장비 사용 시 대관료 30%가 추가됩니다.');
+  $('#sNote').innerHTML=notes.map(n=>'⚠ '+n).join('<br>');return {l,r,s,e,h,t}}
+bLoc.addEventListener('change',fillRooms);[bRoom,bStart,bEnd,bDate].forEach(x=>x.addEventListener('change',calc));
+const tmr=new Date();tmr.setDate(tmr.getDate()+1);$$('input[type=date]').forEach(d=>d.min=tmr.toISOString().slice(0,10));
+fillRooms();
+
+/* Forms → email (FormSubmit). 실패 시 복사 · 메일 앱 대체 경로 */
+function validate(f){let ok=true;f.querySelectorAll('[required]').forEach(i=>{const bad=i.type==='checkbox'?!i.checked:!String(i.value).trim();i.style.borderColor=bad?'#c0392b':'';if(bad)ok=false});if(!ok)toast('필수 항목을 확인해 주세요.');return ok}
+function collect(f){const d={};new FormData(f).forEach((v,k)=>{if(String(v).trim())d[k]=v});return d}
+const asText=(kind,d)=>`[AIP Spaces] ${kind}\n`+Object.entries(d).map(([k,v])=>`${k}: ${v}`).join('\n');
+
+async function send(kind,data,btn){
+  const payload=Object.assign({_subject:`[AIP Spaces] ${kind} - ${data['회사']||data['담당자']||data['신청자']||data['예약자']||''}`,_template:'table',_captcha:'false',_cc:CONFIG.emails.slice(1).join(','),'신청 구분':kind,'접수 시각':new Date().toLocaleString('ko-KR')},data);
+  if(data['이메일'])payload._replyto=data['이메일'];
+  btn&&btn.classList.add('sending');
+  try{
+    const ctl=new AbortController();setTimeout(()=>ctl.abort(),12000);
+    const res=await fetch(CONFIG.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload),signal:ctl.signal});
+    const j=await res.json().catch(()=>({}));
+    if(!res.ok||String(j.success)==='false')throw new Error(j.message||res.status);
+    doneModal(kind,data); return true;
+  }catch(err){ fallbackModal(kind,data); return false; }
+  finally{btn&&btn.classList.remove('sending')}
+}
+function doneModal(kind,data){
+  $('#mTitle').textContent='접수가 완료되었습니다';
+  $('#mLead').innerHTML=`AIP Spaces 담당자가 지점 확인 후 영업일 기준 1일 이내 연락드립니다.<br>급한 문의: <b>${CONFIG.phones.join(' / ')}</b>`;
+  $('#mBody').textContent=asText(kind,data);$('#mCopy').style.display='none';$('#mMail').style.display='none';$('#modal').classList.add('on');
+}
+function fallbackModal(kind,data){
+  const body=asText(kind,data);
+  $('#mTitle').textContent='온라인 접수가 지연되고 있습니다';
+  $('#mLead').innerHTML=`아래 내용을 복사해 이메일로 보내주시거나 전화 주세요.<br>Email <b>${CONFIG.emails.join(' / ')}</b> · Tel <b>${CONFIG.phones.join(' / ')}</b>`;
+  $('#mBody').textContent=body;$('#mCopy').style.display='';$('#mMail').style.display='';
+  $('#mMail').href=`mailto:${CONFIG.emails.join(',')}?subject=${encodeURIComponent('[AIP Spaces] '+kind)}&body=${encodeURIComponent(body)}`;
+  $('#modal').classList.add('on');
+}
+
+$('#fBooking').onsubmit=async e=>{e.preventDefault();const f=e.target;if(!validate(f))return;const c=calc();
+  if(c.h<=0){toast('종료 시간은 시작 시간 이후여야 합니다.');return}
+  const cap=parseInt(c.r[2]);if(cap&&+f['인원'].value>cap&&!/\+/.test(String(c.r[2]))){toast(`선택한 공간의 최대 수용 인원은 ${c.r[2]}인입니다.`);return}
+  const d=collect(f);d['지점']=`${c.l.name} (${c.l.kr})`;d['공간']=c.r[0];d['이용시간']=`${String(c.s).padStart(2,'0')}:00–${String(c.e).padStart(2,'0')}:00 (${c.h}시간)`;delete d['시작'];delete d['종료'];
+  d['예상 대관료']=c.t==null?'별도 문의':won(c.t)+' (VAT 포함)';
+  if(await send(f.dataset.kind,d,f.querySelector('[type=submit]')))f.reset(),fillRooms();};
+['#fConfirm','#fTour','#fFilm'].forEach(id=>{$(id).onsubmit=async e=>{e.preventDefault();const f=e.target;if(!validate(f))return;
+  if(await send(f.dataset.kind,collect(f),f.querySelector('[type=submit]')))f.reset();}});
+
+/* Guide request dialog (reuses modal with a mini form) */
+function openGuide(){$('#gModal').classList.add('on')}
+document.body.insertAdjacentHTML('beforeend',`<div class="modal" id="gModal"><div class="dialog"><h4>공간안내서 요청</h4><p class="lead">이메일 주소를 남겨주시면 안내서를 보내드립니다.</p>
+<form id="fGuide" data-kind="공간안내서 요청" novalidate><input type="hidden" name="요청 안내서" id="gTarget">
+<div class="row"><div><label>성함 <i>*</i></label><input name="신청자" required></div><div><label>회사명</label><input name="회사"></div></div>
+<div class="row"><div><label>이메일 <i>*</i></label><input type="email" name="이메일" required></div><div><label>연락처</label><input type="tel" name="연락처"></div></div>
+<label class="agree"><input type="checkbox" required><span>개인정보 수집 · 이용에 동의합니다.</span></label>
+<div class="acts"><button type="button" class="btn btn-line" style="color:var(--ink)" id="gClose">닫기</button><button class="btn btn-gold" type="submit">요청하기</button></div></form></div></div>`);
+$('#gClose').onclick=()=>$('#gModal').classList.remove('on');
+$('#fGuide').onsubmit=async e=>{e.preventDefault();const f=e.target;if(!validate(f))return;const d=collect(f);$('#gModal').classList.remove('on');if(await send(f.dataset.kind,d,null))f.reset();};
+
+/* Modal */
+$('#mClose').onclick=()=>$('#modal').classList.remove('on');
+$$('.modal').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('on')}));
+$('#mCopy').onclick=async()=>{try{await navigator.clipboard.writeText($('#mBody').textContent);toast('내용을 복사했습니다.')}catch(_){toast('복사가 지원되지 않습니다. 직접 선택해 복사해 주세요.')}};
+let tt;function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('on'),2600)}
+
+show(location.hash.slice(1));
+</script>
+</body>
+</html>
