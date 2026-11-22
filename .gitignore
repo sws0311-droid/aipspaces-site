@@ -4,3 +4,7 @@ Thumbs.db
 .env*
 .vercel
 node_modules/
+
+# Claude Code 개인 설정 (커밋 금지)
+CLAUDE.local.md
+.claude/settings.local.json
